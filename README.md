@@ -7,6 +7,8 @@ Should work with any Raspbian Distro. I've tested it with Retropie on PI 2 MODEL
 -Uses 6 GPIO pins from the Raspberry Pi pin header (GPIO16, GPIO22, GPIO23, GPIO24, GPIO25, GPIO27 )  
 -Git-Core should be preinstalled  for WiringPi library clone.  
 -[WiringPi library](https://github.com/WiringPi/WiringPi) should be preinstalled in order for the program to compile.  
+-Because Raspberry is under the control of the Operating System's scheduler, some of the critical timing commands might fail to be excecuted
+in time. To avoid this problem as much as possible inside the main() function, the program is setting the highest priority for itself.
 
 Clone the repository cd into the repo folder and then compile with:  
 ```sh
@@ -33,7 +35,7 @@ Switch:
  -fs                  Read the flash to screen
  ```
  
- Examples:
+ Examples:  
  -To read the flash into a file (backup.bin).
  ```sh
  $ ./flasher -r backup.bin
