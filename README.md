@@ -44,4 +44,4 @@ Switch:
  $ ./flasher -w bios.bin
  ```
  
- ~Work In Progress!~
+ -Work In Progress!-
