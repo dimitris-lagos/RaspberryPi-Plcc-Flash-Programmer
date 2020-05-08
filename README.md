@@ -56,5 +56,8 @@ Switch:
  ```sh
  $ ./flasher -w bios.bin
  ```
- 
- ~Work In Progress!~
+  If you need an adapter to interface with the plcc chip, I've provided a simple and cheap pcb schematic. Just print the plcc_adapter.pdf at 1:1 scale with a laser printer on glossy or photographic paper. Then use your favourite pcb etching method. And you have plcc adapter to work with. Only needs some pin headers and a plcc socket(from an old motherboard maybe!).  
+ ![](https://github.com/dimitris-lagos/RaspberryPi-Plcc-Flash-Programmer/blob/master/adapter/plcc_adapter_pcb.png)  
+   
+ Work In Progress!  
+
